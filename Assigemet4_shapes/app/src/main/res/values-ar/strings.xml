@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assigemet4_shapes</string>
+    <string name="logo_name">اسم الشعار</string>
+    <string name="or">او</string>
+    <string name="tv_forbtn1">تابع مع فيسبوك</string>
+    <string name="tv_forbtn2">تابع مع جوجل</string>
+    <string name="tv_forbtn3">تابع مع تويتر</string>
+    <string name="edit_t1">الاسم الكامل</string>
+    <string name="edit_t2">رقم الهاتف</string>
+    <string name="edit_t3">الباسسورد</string>
+    <string name="our_rules">عند النقر على استمرار فأنت توافق على سياسة الخصوصية</string>
+    <string name="text_for_btn">استمر</string>
+    <string name="have_account">هل لديك حساب؟</string>
+    <string name="hello">أهلا بعودتك</string>
+    <string name="log_in_Q_app">تسجيل حساب في البرنامج</string>
+    <string name="email_hint">ايميل</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="login">تسجيل</string>
+    <string name="use_account">استمر باستخدام</string>
+    <string name="use_google">جوجل</string>
+    <string name="use_facebook">فيسبوك</string>
+    <string name="dont_have_account">هل لديك حساب؟</string>
+    <string name="lets_start">هيا لنبدأ</string>
+    <string name="creat_account">عمل حساب على البرنامج</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="phone">الهاتف</string>
+    <string name="confirt_password">تأكيد كلمة المرور</string>
+    <string name="create_btn">اصنع</string>
+    <string name="have_account2">هل لديك حساب؟ سجل هنا</string>
+</resources>

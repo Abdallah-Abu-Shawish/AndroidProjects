@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lenier_backgroung"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_lets_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_start"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lets_start"
+        android:text="@string/creat_account"
+        android:layout_marginTop="6dp"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+
+    <EditText
+        android:id="@+id/edit_txt_username"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:layout_marginTop="@dimen/bimension"
+        android:paddingStart="@dimen/dimension2"
+        android:drawablePadding="8dp"
+        android:hint="@string/username"
+        android:background="@drawable/layout3_shape1"
+        app:layout_constraintTop_toBottomOf="@id/tv_create_account"/>
+
+
+    <EditText
+        android:id="@+id/edit_txt_email"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:hint="@string/email_hint"
+        android:paddingStart="@dimen/dimension2"
+        android:drawablePadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/ic_outline_email_24"
+        android:layout_marginTop="@dimen/bimension"
+        android:background="@drawable/layout3_shape1"
+        app:layout_constraintTop_toBottomOf="@id/edit_txt_username"/>
+
+
+    <EditText
+        android:id="@+id/edit_txt_phone"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/phone"
+        android:paddingStart="@dimen/dimension2"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:layout_marginTop="@dimen/bimension"
+        android:background="@drawable/layout3_shape1"
+        app:layout_constraintTop_toBottomOf="@id/edit_txt_email"/>
+
+
+    <EditText
+        android:id="@+id/edit_txt_password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/bimension"
+        android:background="@drawable/layout3_shape1"
+        android:drawableStart="@drawable/ic_outline_lock_24"
+        android:drawablePadding="8dp"
+        android:hint="@string/password_hint"
+        android:paddingStart="@dimen/dimension2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_txt_phone" />
+
+
+    <EditText
+        android:id="@+id/edit_txt_confirt_password"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/bimension"
+        android:background="@drawable/layout3_shape1"
+        android:drawableStart="@drawable/ic_outline_lock_24"
+        android:drawablePadding="8dp"
+        android:hint="@string/confirt_password"
+        android:paddingStart="@dimen/dimension2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_txt_password" />
+
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_txt_confirt_password"
+        android:background="@drawable/layout3_selector"
+        android:layout_marginTop="10dp"
+        android:text="@string/create_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/have_account2"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

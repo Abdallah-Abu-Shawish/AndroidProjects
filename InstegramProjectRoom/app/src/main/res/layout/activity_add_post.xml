@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Post Page"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/ed_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Post Title"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_post_detaile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter Post Detail"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_shape"
+        android:layout_margin="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="20dp">
+
+        <ImageView
+            android:id="@+id/img_post"
+            android:layout_width="380dp"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_add_img_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Image Post"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:id="@+id/btn_do_post"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Post"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

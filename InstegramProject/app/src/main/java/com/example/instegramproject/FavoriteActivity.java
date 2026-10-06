@@ -1,0 +1,66 @@
+package com.example.instegramproject;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import com.example.instegramproject.databinding.ActivityFavoriteBinding;
+import com.google.android.material.navigation.NavigationBarView;
+
+public class FavoriteActivity extends AppCompatActivity {
+
+    ActivityFavoriteBinding binding;
+    Context context;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityFavoriteBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        context = this.getApplicationContext();
+
+        binding.navBar.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+
+                switch (item.getItemId()){
+
+                    case R.id.home:
+                        Intent intent = new Intent(context ,MainActivity.class);
+                        startActivity(intent);
+                        return true;
+
+                    case R.id.profile:
+                        Intent intent2 = new Intent(context ,ProfileActivity.class);
+                        startActivity(intent2);
+                        return true;
+
+                    case R.id.add_post:
+                        Intent intent3 = new Intent(context ,AddPostActivity.class);
+                        startActivity(intent3);
+                        return true;
+
+                    case R.id.favorite:
+                        return true;
+
+
+                    case R.id.search:
+                        Intent intent4 = new Intent(context ,SearchActivity.class);
+                        startActivity(intent4);
+                        return true;
+
+                }
+                return false;
+            }
+        });
+
+
+
+    }
+}

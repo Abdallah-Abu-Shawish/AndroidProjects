@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".noteapp.AddNoteActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Notes"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post auther"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/ed_addNoteTitle"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="post auther"
+        android:padding="10dp"
+
+        android:layout_margin="14dp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Text:"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/ed_addNoteText"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Post Text"
+        android:padding="10dp"
+
+        android:layout_margin="14dp"/>
+
+    <Button
+        android:id="@+id/select_img_auther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_shape"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Select image"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_add_Note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Add Post"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>

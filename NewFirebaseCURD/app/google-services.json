@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "152746002181",
+    "firebase_url": "https://fir-curd-73524-default-rtdb.firebaseio.com",
+    "project_id": "fir-curd-73524",
+    "storage_bucket": "fir-curd-73524.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152746002181:android:c1ed7839d6f04c3509596c",
+        "android_client_info": {
+          "package_name": "com.example.newfirebasecurd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1RZC-gxROJuY6sz88-YoE0Jh3qXoXZXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

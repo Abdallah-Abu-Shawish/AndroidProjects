@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+         />
+
+    <TextView
+        android:id="@+id/logo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo_name"
+        android:textSize="60sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:text="@string/tv_forbtn1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/facebook"
+        android:paddingStart="@dimen/dimension2"
+        android:paddingEnd="@dimen/bimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableTint="@color/white"
+
+        app:layout_constraintVertical_bias="0.22"
+        android:background="@drawable/shape1"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="@string/tv_forbtn2"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:drawableStart="@drawable/google"
+        android:paddingStart="@dimen/dimension2"
+        android:paddingEnd="@dimen/bimension"
+        android:drawableTint="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        android:background="@drawable/shape2"
+        />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="@string/tv_forbtn3"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:drawableStart="@drawable/twitter"
+        android:paddingStart="@dimen/dimension2"
+        android:drawableTint="@color/white"
+
+        android:paddingEnd="@dimen/bimension"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42"
+        android:background="@drawable/shape3"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/dimension2"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/dimension2"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@id/button3" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        app:layout_constraintEnd_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or"
+        android:background="@drawable/shape4"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+        android:hint="@string/edit_t1"
+        android:drawablePadding="10dp"
+        android:paddingStart="@dimen/dimension2"/>
+
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text1"
+        android:background="@drawable/shape4"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:paddingStart="@dimen/dimension2"
+        android:hint="@string/edit_t2"
+       />
+
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text2"
+        android:background="@drawable/shape4"
+        android:layout_marginTop="10dp"
+        android:hint="@string/edit_t3"
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        android:drawableEnd="@drawable/ic_baseline_remove_red_eye_24"
+        android:paddingEnd="@dimen/dimension2"
+        android:paddingStart="@dimen/dimension2"
+        android:drawablePadding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/our_rules"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/our_rules"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text3" />
+
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:text="@string/text_for_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/our_rules"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector1"/>
+
+
+    <TextView
+        android:id="@+id/agreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/continue_btn"
+        android:layout_marginTop="15dp"
+        android:text="@string/have_account"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

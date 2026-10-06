@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Sing in to Robin"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/robin_logo"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_margin="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="20dp"
+        android:drawableEnd="@drawable/forget_password_robin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:text="SING IN"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#01D3B3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/google"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/facebook_icon"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"/>
+
+
+    </LinearLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DON'T HAVE AN ACCOUNT? SING UP"
+    android:textColor="@color/black"
+    android:layout_marginBottom="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:backgroundTint="#FFFFFF"/>
+
+
+</LinearLayout>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="8dp"
+                app:cardElevation="20dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/menu_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_menu_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_margin="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/market_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/ic_outline_local_grocery_store_24"
+                        android:layout_margin="20dp"/>
+
+                    <TextView
+                        android:id="@+id/hello_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/menu_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_margin="20dp"
+                        android:text="Hello Chinwe,"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/whatDoYouWantToEat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/hello_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="20dp"
+                        android:text="What would you like to "
+                        android:textSize="35sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/eat_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/whatDoYouWantToEat"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="20dp"
+                        android:text="eat?"
+                        android:textSize="35sp"
+                        android:textColor="#FF9800"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:id="@+id/sharch_editText"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/eat_text"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/sharch_shape"
+                        android:drawableEnd="@drawable/ic_baseline_mic_24"
+                        android:paddingEnd="10dp"
+                        android:drawableStart="@drawable/search_icon2"
+                        android:paddingStart="12dp"
+                        android:hint="Enter a name of the food"
+                        android:drawablePadding="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/filter_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/filter_shape"
+                        android:src="@drawable/filter2"
+                        app:layout_constraintBottom_toBottomOf="@id/sharch_editText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.278"
+                        app:layout_constraintStart_toEndOf="@id/sharch_editText" />
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <HorizontalScrollView
+                android:id="@+id/button_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_shape"
+                        android:text="Meals"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_shape2"
+                        android:text="Sides"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_shape2"
+                        android:text="Snackes"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_shape2"
+                        android:text="Drinks"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/today_special"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/button_scroll"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="20dp"
+                android:text="Today's Special Offer"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="360dp"
+                android:layout_height="180dp"
+                app:layout_constraintTop_toBottomOf="@id/today_special"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="20dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constrte"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/burger_img"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/burger_asdff"
+                        app:layout_constraintTop_toTopOf="@id/constrte"
+                        app:layout_constraintStart_toStartOf="@id/constrte"
+                        app:layout_constraintBottom_toBottomOf="@id/constrte"
+                        />
+
+                    <TextView
+                        android:id="@+id/burger_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/burger_img"
+                        app:layout_constraintTop_toTopOf="@id/constrte"
+                        android:layout_margin="10dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Yummies Special Burger"/>
+
+
+                    <TextView
+                        android:id="@+id/text_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/burger_name"
+                        app:layout_constraintStart_toStartOf="@id/burger_name"
+                        app:layout_constraintEnd_toEndOf="@id/burger_name"
+                        android:layout_marginTop="10dp"
+                        android:text="Now"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+
+
+                    <TextView
+                        android:id="@+id/N1.800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@id/text_now"
+                        app:layout_constraintStart_toStartOf="@id/text_now"
+                        app:layout_constraintTop_toBottomOf="@id/text_now"
+                        android:layout_margin="10dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="N1,800"/>
+
+                    <TextView
+                        android:id="@+id/off_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@id/N1.800"
+                        app:layout_constraintStart_toStartOf="@id/N1.800"
+                        app:layout_constraintTop_toBottomOf="@id/N1.800"
+                        android:textSize="12sp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="(10% off)"/>
+
+                    <Button
+                        android:id="@+id/add_card"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintStart_toEndOf="@id/burger_img"
+                        app:layout_constraintEnd_toEndOf="@id/constrte"
+                        app:layout_constraintBottom_toBottomOf="@id/constrte"
+                        app:layout_constraintTop_toBottomOf="@id/off_10"
+                        android:textColor="@color/orange"
+                        android:background="@drawable/add_card_btn"
+                        android:text="Add a cart"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/popular_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:text="Popular Now"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/see_all_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="70dp"
+        android:text="See All Menu >"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/card2" />
+
+
+</LinearLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintTop_toBottomOf="@id/popular_now"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card4"
+                        android:layout_width="160dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/popular_now"
+                        android:layout_margin="20dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <ImageView
+                                android:id="@+id/heart2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_outline_favorite_border_24"/>
+
+                            <ImageView
+                                android:id="@+id/beef_salad2"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/beef_salad"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.312" />
+
+                            <TextView
+                                android:id="@+id/food_type2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/beef_salad2"
+                                android:text="Beef Salad"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/food_number2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/food_type2"
+                                android:text="N1,200"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
+                        android:layout_width="160dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/popular_now"
+                        android:layout_margin="20dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <ImageView
+                                android:id="@+id/heart3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_outline_favorite_border_24"/>
+
+                            <ImageView
+                                android:id="@+id/beef_salad3"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/beef_salad"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.312" />
+
+                            <TextView
+                                android:id="@+id/food_type3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/beef_salad3"
+                                android:text="Beef Salad"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/food_number3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/food_type3"
+                                android:text="N1,200"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="160dp"
+                        android:layout_height="180dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/popular_now"
+                        android:layout_margin="20dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <ImageView
+                                android:id="@+id/heart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_outline_favorite_border_24"/>
+
+                            <ImageView
+                                android:id="@+id/beef_salad"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/beef_salad"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.312" />
+
+                            <TextView
+                                android:id="@+id/food_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/beef_salad"
+                                android:text="Beef Salad"
+                                android:layout_marginTop="7dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/food_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/food_type"
+                                android:text="N1,200"
+                                android:textSize="16sp"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        app:cardElevation="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_chat_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Chat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/icon1"
+                app:layout_constraintStart_toStartOf="@id/icon1"
+                app:layout_constraintTop_toBottomOf="@id/icon1" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintStart_toEndOf="@id/icon1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/icon2"
+                app:layout_constraintStart_toStartOf="@id/icon2"
+                app:layout_constraintTop_toBottomOf="@id/icon2" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_home_24"
+                app:layout_constraintStart_toEndOf="@id/icon2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#F89C15"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/icon3"
+                app:layout_constraintStart_toStartOf="@id/icon3"
+                app:layout_constraintTop_toBottomOf="@id/icon3" />
+
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_soup_kitchen_24"
+                app:layout_constraintStart_toEndOf="@id/icon3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/icon4"
+                app:layout_constraintStart_toStartOf="@id/icon4"
+                app:layout_constraintTop_toBottomOf="@id/icon4" />
+
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                app:layout_constraintStart_toEndOf="@id/icon4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorite"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/icon5"
+                app:layout_constraintStart_toStartOf="@id/icon5"
+                app:layout_constraintTop_toBottomOf="@id/icon5" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

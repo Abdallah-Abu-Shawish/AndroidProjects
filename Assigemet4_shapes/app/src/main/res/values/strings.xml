@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Assigemet4_shapes</string>
+    <string name="logo_name">luxus</string>
+    <string name="or">OR</string>
+    <string name="tv_forbtn1">Continue with Facebook</string>
+    <string name="tv_forbtn2">Continue with Google</string>
+    <string name="tv_forbtn3">Continue with Twitter</string>
+    <string name="edit_t1">Full Name</string>
+    <string name="edit_t2">Phone Number</string>
+    <string name="edit_t3">Password</string>
+    <string name="our_rules">By clicking (Continue) you are agree that you have read and accepted our Tearms of Sarvice and Privecy Policy</string>
+    <string name="text_for_btn">Continue</string>
+    <string name="have_account">Already have an account? log in</string>
+    <string name="hello">Welcome back!</string>
+    <string name="log_in_Q_app">Log in to your existant account of Q Allure</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="login">LOG IN</string>
+    <string name="use_account">Or connect using</string>
+    <string name="use_google">Google</string>
+    <string name="use_facebook">Facebook</string>
+    <string name="dont_have_account">Don`t have an account? Sing up</string>
+    <string name="lets_start">Let`s Get Started!</string>
+    <string name="creat_account">Create an account to Q Allure to get all featrues</string>
+    <string name="username">User Name</string>
+    <string name="phone">Phone</string>
+    <string name="confirt_password">Confirm Password</string>
+    <string name="create_btn">Create</string>
+    <string name="have_account2">Already have an account? Login here</string>
+
+
+</resources>

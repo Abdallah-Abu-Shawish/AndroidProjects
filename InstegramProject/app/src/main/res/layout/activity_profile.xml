@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Page"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="35dp">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Name"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:layout_margin="20dp"/>
+
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Username"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:layout_margin="20dp"/>
+
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Password"
+            android:padding="15dp"
+            android:background="@drawable/edit_text_shape"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/btn_SingUp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Edit Profile"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/edit_text_shape"
+            android:layout_gravity="center"
+            />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintCircleRadius="30dp"
+        app:circularflow_defaultRadius="30dp"
+        app:menu="@menu/nav_menu"/>
+    </LinearLayout>
+
+
+

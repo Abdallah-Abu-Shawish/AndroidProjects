@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/percon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/rubiocircle" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/percon"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/percon"
+        android:text="150"
+        android:textColor="#D8080E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num"
+        android:layout_toEndOf="@+id/percon"
+        android:layout_marginStart="16dp"
+        android:text="Publisher"
+        android:textColor="#D8080E"
+        android:textSize="15sp"
+         />
+
+    <TextView
+        android:id="@+id/mun2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@id/num"
+        android:layout_alignTop="@id/num"
+        android:textColor="#D8080E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/followers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mun2"
+        android:layout_toEndOf="@id/publisher"
+        android:text="Followers"
+        android:layout_marginStart="15dp"
+        android:textColor="#D8080E"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mun3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@id/mun2"
+        android:layout_alignTop="@id/num"
+        android:textColor="#D8080E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mun3"
+        android:layout_toEndOf="@id/followers"
+        android:text="Orders"
+        android:layout_marginStart="16dp"
+        android:textColor="#D8080E"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/message_but"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publisher"
+        android:layout_toEndOf="@id/percon"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Message"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/add_preson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_person_add_alt_24"
+        android:layout_toEndOf="@id/message_but"
+        android:layout_below="@id/orders"
+        android:layout_margin="12dp"
+        android:backgroundTint="#fff"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/percon"
+        android:layout_alignStart="@id/percon"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:text="Ahmed Khaled"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@id/name"
+        android:layout_toEndOf="@id/name"
+        android:src="@drawable/ic_baseline_star_outline_24" />
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/star1"
+        android:layout_alignBottom="@id/name"
+        />
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/star2"
+        android:layout_alignBottom="@id/name"
+        />
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/star3"
+        android:layout_alignBottom="@id/name"
+        />
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/name"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/star4"
+        android:layout_alignBottom="@id/name"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:backgroundTint="#35D812"
+        android:layout_toEndOf="@id/star5"
+        android:layout_alignBottom="@id/name"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-7dp"
+        />
+        <TextView
+            android:id="@+id/job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sowftware Development and Devops"
+            android:layout_below="@id/name"
+            android:layout_alignStart="@id/name"
+            />
+
+    <ImageView
+        android:id="@+id/icon_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_email_24"
+        android:layout_below="@id/job"
+        android:layout_alignStart="@id/job"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/email_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info@gmail.com"
+        android:layout_toEndOf="@id/icon_email"
+        android:layout_below="@id/job"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon_phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_phone_enabled_24"
+        android:layout_below="@id/icon_email"
+        android:layout_alignStart="@id/job"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="009706960214"
+        android:layout_toEndOf="@id/icon_email"
+        android:layout_below="@id/email_adress"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/icon_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_below="@id/icon_phone_num"
+        android:layout_alignStart="@id/job"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaza.AlNaser St"
+        android:layout_toEndOf="@id/icon_email"
+        android:layout_below="@id/phone_num"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="5dp"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/my_location"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/reviwes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviwes"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/divider"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:id="@+id/chicken"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/reviwes"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grilled_chicken" />
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grilled Chicken"
+        android:textStyle="bold"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@id/chicken"
+        android:layout_below="@id/reviwes"
+        android:layout_marginTop="39dp"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type1"
+        android:layout_toEndOf="@id/chicken"
+        android:textSize="17sp"
+        android:layout_marginStart="3dp"
+        android:text="50 $"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/rate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/chicken"
+        android:layout_below="@id/price1"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/rate1_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.2"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/rate1"
+        android:layout_below="@id/price1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="6dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/like1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:layout_toEndOf="@id/rate1_num"
+        android:layout_below="@id/price1"
+        android:layout_marginStart="15dp"/>
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_message_24"
+        android:layout_toEndOf="@id/like1"
+        android:layout_below="@id/price1"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/num_of_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 days"
+        android:textSize="18sp"
+        android:layout_below="@id/rate1"
+        android:layout_alignStart="@id/rate1"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"/>
+
+    <ImageView
+        android:id="@+id/pizza"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/chicken"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza_with_vegetable" />
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza with Vegetables"
+        android:textStyle="bold"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@id/pizza"
+        android:layout_below="@id/num_of_days"
+        android:layout_marginTop="59dp"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type2"
+        android:layout_toEndOf="@id/pizza"
+        android:textSize="17sp"
+        android:layout_marginStart="3dp"
+        android:text="50 $"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/rate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_star_outline_24"
+        android:layout_toEndOf="@id/pizza"
+        android:layout_below="@id/price2"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/rate2_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.2"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/rate2"
+        android:layout_below="@id/price2"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="6dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/like2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:layout_toEndOf="@id/rate2_num"
+        android:layout_below="@id/price2"
+        android:layout_marginStart="15dp"/>
+    <ImageView
+        android:id="@+id/message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_message_24"
+        android:layout_toEndOf="@id/like2"
+        android:layout_below="@id/price2"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/num_of_days2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 days"
+        android:textSize="18sp"
+        android:layout_below="@id/rate2"
+        android:layout_alignStart="@id/rate2"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="4dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

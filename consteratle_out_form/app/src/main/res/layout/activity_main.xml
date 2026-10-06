@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/spotify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spotfiy"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/image"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="spot"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@id/app_name"
+        app:layout_constraintTop_toBottomOf="@id/app_name"/>
+
+    <TextView
+        android:id="@+id/market_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="market price"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toEndOf="@id/app_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69,99$"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="16sp"
+       app:layout_constraintTop_toBottomOf="@id/market_price"
+        app:layout_constraintEnd_toEndOf="@id/market_price"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="10dp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#72D1D1D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+
+    <TextView
+        android:id="@+id/market_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Market Orders"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_inventory_24"
+        app:layout_constraintTop_toBottomOf="@id/market_orders"
+        app:layout_constraintStart_toStartOf="@id/market_orders"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy in doller"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/icon1"
+        app:layout_constraintTop_toTopOf="@id/icon1"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/buy_dec"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Buy SPOT for a doller value at minimum 1$"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/buy"
+        app:layout_constraintTop_toBottomOf="@id/buy" />
+
+
+    <ImageView
+        android:id="@+id/arro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toEndOf="@id/buy"
+        app:layout_constraintTop_toTopOf="@id/buy" />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_pie_chart_24"
+        app:layout_constraintTop_toBottomOf="@id/icon1"
+        app:layout_constraintStart_toStartOf="@id/market_orders"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/buy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy in Shares"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/icon2"
+        app:layout_constraintTop_toTopOf="@id/icon2"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/buy_dec2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Buy SPOT at minimum 0.0000001 shares"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/buy2"
+        app:layout_constraintTop_toBottomOf="@id/buy2" />
+
+    <ImageView
+        android:id="@+id/arro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toEndOf="@id/buy2"
+        app:layout_constraintTop_toTopOf="@id/buy2" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#72D1D1D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buy_dec2" />
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/conditional_orders2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Conditional Orders"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_rule_24"
+        android:background="#334230"
+        app:layout_constraintTop_toBottomOf="@id/conditional_orders2"
+        app:layout_constraintStart_toStartOf="@id/conditional_orders2"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/buy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="limite order"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/icon3"
+        app:layout_constraintTop_toTopOf="@id/icon3"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/buy_dec3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Buy SPOT for a doller value at minimum 1$"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/buy3"
+        app:layout_constraintTop_toBottomOf="@id/buy3" />
+
+
+    <ImageView
+        android:id="@+id/arro3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toEndOf="@id/buy3"
+        app:layout_constraintTop_toTopOf="@id/buy3" />
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_swap_vert_24"
+        app:layout_constraintTop_toBottomOf="@id/icon3"
+        app:layout_constraintStart_toStartOf="@id/conditional_orders2"
+        android:layout_marginTop="35dp"
+        android:background="#334230" />
+
+    <TextView
+        android:id="@+id/buy4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop order"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/icon4"
+        app:layout_constraintTop_toTopOf="@id/icon4"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/buy_dec4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Buy SPOT at minimum 0.0000001 shares"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/buy4"
+        app:layout_constraintTop_toBottomOf="@id/buy4" />
+
+    <ImageView
+        android:id="@+id/arro4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@id/buy4"
+        app:layout_constraintTop_toTopOf="@id/buy4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

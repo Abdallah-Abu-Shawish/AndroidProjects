@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddWatchesActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Add Product Page"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Product Name"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/add_product_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:hint="Enter product name"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Product Mark"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/add_product_mark"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:hint="Enter product mark"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Product Price"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <EditText
+        android:id="@+id/add_product_price"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:hint="Enter product price"
+        android:paddingTop="1dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Product Quntity"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <EditText
+        android:id="@+id/add_product_quntity"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:hint="Enter product quntity"
+        android:paddingTop="1dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Product Description"
+                android:textColor="@color/black"
+                android:layout_marginStart="40dp"/>
+
+
+            <EditText
+                android:id="@+id/add_product_description"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/profile_info_shape"
+                android:paddingStart="10dp"
+                android:hint="Enter product description"
+                android:paddingTop="1dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="40dp"/>
+
+
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Select Product image"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/white"
+        android:text="Select image"
+        android:background="@drawable/btn_shape"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <Button
+        android:id="@+id/btn_add_product"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Add Product"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_shape"
+        />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

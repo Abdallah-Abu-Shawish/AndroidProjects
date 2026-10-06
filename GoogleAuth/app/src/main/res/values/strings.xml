@@ -1,0 +1,5 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">123.apps.googleusercontent.com</string>
+    <string name="app_name">Google Auth</string>
+    <string name="google_auth">Google Auth</string>
+</resources>

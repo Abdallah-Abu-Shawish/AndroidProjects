@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+   <item android:id="@+id/circle" android:title="Circle"/>
+    <item android:id="@+id/rctangle" android:title="Rectangle"/>
+    <item android:id="@+id/square" android:title="Square"/>
+
+
+
+</menu>

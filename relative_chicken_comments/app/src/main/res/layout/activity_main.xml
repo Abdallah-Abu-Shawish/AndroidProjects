@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_chicken"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/grilled_chicken"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tyde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grilled Chicken"
+        android:textSize="18sp"
+        android:layout_toEndOf="@id/img_chicken"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 d"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/img_chicken"
+        android:layout_below="@id/tyde"
+        android:layout_marginTop="7dp"
+        android:textColor="#111"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/img_chicken"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/albert"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/png_albert_einstein"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/divider"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Albert Einstein"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:layout_toEndOf="@id/albert"
+        android:layout_below="@id/divider"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for this great meal I will try it again "
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/albert"
+        android:layout_below="@id/name1"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/d4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4d"
+        android:layout_below="@id/comment"
+        android:layout_toEndOf="@id/albert"
+        android:textSize="15sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:textSize="15sp"
+        android:layout_below="@id/comment"
+        android:layout_alignBottom="@id/d4"
+        android:layout_toEndOf="@id/d4"
+        android:textColor="#111"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/like"
+        android:layout_below="@id/comment"
+        android:layout_alignBottom="@id/d4"
+        android:gravity="center"
+        android:textColor="#111"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="5dp"/>
+
+    <ImageView
+        android:id="@+id/biden"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/biden_circle"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/divider2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joe Biden"
+        android:textStyle="bold"
+        android:layout_below="@id/divider2"
+        android:layout_toEndOf="@id/biden"
+        android:textColor="#111"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/d4"
+        android:layout_marginTop="7dp"
+        android:visibility="invisible"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for this great meal I will try it again "
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/biden"
+        android:layout_below="@id/name2"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6d"
+        android:layout_below="@id/comment2"
+        android:layout_toEndOf="@id/biden"
+        android:textSize="15sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/like2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:textSize="15sp"
+        android:layout_below="@id/comment2"
+        android:layout_alignBottom="@id/d6"
+        android:layout_toEndOf="@id/d4"
+        android:textColor="#111"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reply2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/like2"
+        android:layout_below="@id/comment2"
+        android:layout_alignBottom="@id/d6"
+        android:gravity="center"
+        android:textColor="#111"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="5dp"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/d6"
+        android:layout_marginTop="7dp"
+        android:visibility="invisible"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/elon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/elon_musk"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/divider3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elon Musk"
+        android:textStyle="bold"
+        android:layout_below="@id/divider3"
+        android:layout_toEndOf="@id/elon"
+        android:textColor="#111"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/comment3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for this great meal I will try it again "
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/elon"
+        android:layout_below="@id/name3"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/d66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6d"
+        android:layout_below="@id/comment3"
+        android:layout_toEndOf="@id/elon"
+        android:textSize="15sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/like3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:textSize="15sp"
+        android:layout_below="@id/comment3"
+        android:layout_alignBottom="@id/d66"
+        android:layout_toEndOf="@id/d66"
+        android:textColor="#111"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reply3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/like3"
+        android:layout_below="@id/comment3"
+        android:layout_alignBottom="@id/d66"
+        android:gravity="center"
+        android:textColor="#111"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="5dp"/>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/d66"
+        android:layout_marginTop="7dp"
+        android:visibility="invisible"
+        android:background="?android:attr/listDivider" />
+
+    <ImageView
+        android:id="@+id/jone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/jone_relcaser"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/divider4"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"/>
+
+
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jone Relcaser"
+        android:textStyle="bold"
+        android:layout_below="@id/divider4"
+        android:layout_toEndOf="@id/jone"
+        android:textColor="#111"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/comment4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for this great meal I will try it again "
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@id/jone"
+        android:layout_below="@id/name4"
+        android:textSize="15sp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/d666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6d"
+        android:layout_below="@id/comment4"
+        android:layout_toEndOf="@id/jone"
+        android:textSize="15sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/like4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:textSize="15sp"
+        android:layout_below="@id/comment4"
+        android:layout_alignBottom="@id/d666"
+        android:layout_toEndOf="@id/d666"
+        android:textColor="#111"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_baseline_thumb_up_off_alt_24"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reply4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/like4"
+        android:layout_below="@id/comment4"
+        android:layout_alignBottom="@id/d666"
+        android:gravity="center"
+        android:textColor="#111"
+        android:drawableStart="@drawable/ic_baseline_message_24"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="5dp"/>
+
+
+
+
+</RelativeLayout>

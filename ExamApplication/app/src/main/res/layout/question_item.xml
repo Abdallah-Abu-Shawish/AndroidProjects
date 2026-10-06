@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="480dp"
+    android:background="#F4F4F4"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:text="What is an Intent in Android?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#838383"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/rg_item_choices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_question_text">
+
+                <RadioButton
+                    android:id="@+id/rb_choice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="A UI component for displaying text."
+                    android:textSize="18sp"
+                    android:textColor="#838383"
+                    android:padding="3dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="A message object containing information about an operation to be performed."
+                    android:textSize="18sp"
+                    android:textColor="#838383"
+                    android:padding="3dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="A data storage mechanism for saving user preferences."
+                    android:textSize="18sp"
+                    android:textColor="#838383"
+                    android:padding="3dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="A network communication protocol."
+                    android:textSize="18sp"
+                    android:textColor="#838383"
+                    android:padding="3dp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+

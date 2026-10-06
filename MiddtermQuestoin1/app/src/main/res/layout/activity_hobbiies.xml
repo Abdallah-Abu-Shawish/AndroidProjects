@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HobbiiesActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your hobbies"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/liner_cb"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            android:id="@+id/cb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swimming"/>
+
+
+        <CheckBox
+            android:id="@+id/cb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"/>
+
+        <CheckBox
+            android:id="@+id/cb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riding horse"/>
+
+        <CheckBox
+            android:id="@+id/cb_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viduo games"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter additional information"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ed_edditonal_info"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Enter here"/>
+
+
+  <Button
+      android:id="@+id/finich"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="160dp"
+      android:layout_marginTop="60dp"
+      android:background="@drawable/button_click"
+      android:text="finich"/>
+
+
+
+
+
+</LinearLayout>

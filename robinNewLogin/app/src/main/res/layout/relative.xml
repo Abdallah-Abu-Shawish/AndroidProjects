@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/botton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/botton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:id="@+id/botton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/botton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/botton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/botton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"/>
+
+
+
+    <Button
+        android:id="@+id/botton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/botton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/botton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="relative"
+        android:backgroundTint="#233"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+     <EditText
+         android:id="@+id/personName"
+         android:layout_width="250dp"
+         android:layout_height="60dp"
+         android:layout_margin="30dp"
+         android:hint="Person name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Gender"/>
+
+
+ <RadioGroup
+     android:id="@+id/rg"
+     android:layout_width="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginStart="30dp"
+     android:layout_height="wrap_content">
+
+     <RadioButton
+         android:id="@+id/rb1"
+         android:layout_width="wrap_content"
+         android:layout_marginEnd="20dp"
+         android:layout_height="wrap_content"
+         android:text="male"/>
+
+     <RadioButton
+         android:id="@+id/rb2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="female"/>
+
+
+ </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Age"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb1_age"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:text="20_30"/>
+
+        <RadioButton
+            android:id="@+id/rb2_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30_40"/>
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_click"
+        android:layout_marginStart="160dp"
+        android:text="next"/>
+
+
+
+</LinearLayout>

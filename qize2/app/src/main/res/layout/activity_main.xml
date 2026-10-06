@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="130dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2"
+        app:layout_constraintStart_toStartOf="@id/img1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:text="Proficinal Android"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/img2"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Proficinal Android"
+        app:layout_constraintStart_toStartOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <ImageView
+        android:id="@+id/ico1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_baseline_dark_mode_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#E42C7C"
+        android:text="buy"
+        app:layout_constraintStart_toStartOf="@id/img2"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E42C7C"
+        android:text="borow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/button1" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="380dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="50dp"
+        app:tint="@color/blue"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:srcCompat="@drawable/ic_baseline_dark_mode_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E42C7C"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:srcCompat="@drawable/ic_baseline_dark_mode_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#E42C7C"
+        android:clickable="true"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:srcCompat="@drawable/ic_baseline_dark_mode_24" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="28dp"
+        app:tint="@color/yollow"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton3"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:srcCompat="@drawable/ic_baseline_dark_mode_24" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andriod"
+        app:layout_constraintEnd_toEndOf="@id/floatingActionButton"
+        app:layout_constraintStart_toStartOf="@id/floatingActionButton"
+        app:layout_constraintTop_toBottomOf="@id/floatingActionButton" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andriod"
+        app:layout_constraintEnd_toEndOf="@id/floatingActionButton2"
+        app:layout_constraintStart_toStartOf="@id/floatingActionButton2"
+        app:layout_constraintTop_toBottomOf="@id/floatingActionButton2" />
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andriod"
+        app:layout_constraintEnd_toEndOf="@id/floatingActionButton3"
+        app:layout_constraintStart_toStartOf="@id/floatingActionButton3"
+        app:layout_constraintTop_toBottomOf="@id/floatingActionButton3" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andriod"
+        app:layout_constraintEnd_toEndOf="@id/floatingActionButton4"
+        app:layout_constraintStart_toStartOf="@id/floatingActionButton4"
+        app:layout_constraintTop_toBottomOf="@id/floatingActionButton4" />
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="380dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="@id/button1"
+        app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+    <TextView
+        android:id="@+id/longtext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/bio"
+        app:layout_constraintEnd_toEndOf="@id/divider2"
+        app:layout_constraintStart_toStartOf="@id/divider2"
+        app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

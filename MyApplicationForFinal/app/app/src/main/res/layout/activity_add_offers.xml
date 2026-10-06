@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddOffersActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Add Offers Page"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Offer Name"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/add_offer_name"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:hint="Enter offer name"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Offer Mark"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/add_offer_mark"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:hint="Enter offer mark"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Offer Discount"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <EditText
+        android:id="@+id/add_offer_discount"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:hint="Enter offer discount"
+        android:paddingTop="1dp"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Offer Quntity"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <EditText
+        android:id="@+id/add_offer_quntity"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_info_shape"
+        android:paddingStart="10dp"
+        android:hint="Enter offer quntity"
+        android:paddingTop="1dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="40dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Select offer image"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"/>
+
+
+    <Button
+        android:id="@+id/btn_select_image_for_offer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/white"
+        android:text="Select image"
+        android:background="@drawable/btn_shape"
+        />
+
+
+    <Button
+        android:id="@+id/btn_add_offer"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Add Offer"
+        android:background="@drawable/btn_shape"
+        />
+
+
+
+
+
+
+
+</LinearLayout>
