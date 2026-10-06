@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirstJetpackComposeApp</string>
+    <string name="hello_word">Hello Everyone</string>
+    <string name="hello">Hi Everyone</string>
+</resources>
